@@ -4,9 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,9 +14,9 @@ body {
     background-color: hsl(30, 38%, 92%);
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
-}
-
-.card {
+  }
+  
+  .card {
     display: flex;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
@@ -26,94 +26,94 @@ body {
     width: 90%;
     max-width: 40rem;
     margin: 1rem;
-}
-
-@media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
     .card {
-        flex-direction: row;
-        height: auto;
+      flex-direction: row;
+      height: auto;
     }
-}
-
-.card_image img {
+  }
+  
+  .card_image img {
     width: 100%;
     height: auto;
     display: none;
-}
-
-.card_image .mobile-image {
+  }
+  
+  .card_image .mobile-image {
     display: block;
-}
-
-@media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
     .card_image {
-        flex: 1;
+      flex: 1;
     }
-
+  
     .card_image .mobile-image {
-        display: none;
+      display: none;
     }
-
+  
     .card_image .desktop-image {
-        display: block;
+      display: block;
     }
-}
-
-.card_content {
+  }
+  
+  .card_content {
     padding: 1.5rem;
     flex: 1;
-}
-
-@media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
     .card_content {
-        padding: 2rem;
+      padding: 2rem;
     }
-}
-
-.card_category {
+  }
+  
+  .card_category {
     text-transform: uppercase;
     color: hsl(228, 12%, 48%);
     font-size: 0.75rem;
     letter-spacing: 0.2em;
     margin-bottom: 0.5rem;
-}
-
-.card_title {
+  }
+  
+  .card_title {
     font-family: 'Fraunces', serif;
     color: hsl(212, 21%, 14%);
     font-size: 1.8rem;
     line-height: 1.2;
     margin-bottom: 1rem;
-}
-
-.card_description {
+  }
+  
+  .card_description {
     color: hsl(228, 12%, 48%);
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
-}
-
-.card_pricing {
+  }
+  
+  .card_pricing {
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
-}
-
-.card_price {
+  }
+  
+  .card_price {
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
     font-size: 1.8rem;
     font-weight: 700;
-}
-
-.card_original_price {
+  }
+  
+  .card_original_price {
     color: hsl(228, 12%, 48%);
     font-size: 0.9rem;
     text-decoration: line-through;
     margin-left: 1rem;
-}
-
-.card_button {
+  }
+  
+  .card_button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,15 +125,26 @@ body {
     font-weight: 700;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.card_button img {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .card_button img {
     margin-right: 0.5rem;
     width: 1rem;
     height: auto;
-}
-
-.card_button:hover {
+  }
+  
+  .card_button:hover {
     background-color: hsl(158, 36%, 29%);
-}
+    transform: scale(1.05);
+  }
+  
+  .card_button:focus {
+    outline: 2px solid hsl(158, 36%, 37%);
+    outline-offset: 2px;
+  }
+  
+  .card_content a:focus {
+    outline: 2px solid hsl(158, 36%, 37%);
+    outline-offset: 2px;
+  }
