@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/r4w311a/frontend-mentor-card-preview)
-- Live Site URL: [Add live site URL here](https://r4w311a.github.io/frontend-mentor-card-preview/)
+- Solution URL: [github.com/r4w311a/frontend-mentor-card-preview](https://github.com/r4w311a/frontend-mentor-card-preview)
+- Live Site URL: [r4w311a.github.io/frontend-mentor-card-preview](https://r4w311a.github.io/frontend-mentor-card-preview/)
 
 ## My process
 
